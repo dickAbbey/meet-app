@@ -1,0 +1,2068 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+    /* box-sizing: border-box !important; */
+}
+
+:root{
+    --ocean_blue: #4D96A9;
+    --ocean_blue_hover: #71C0D4;
+    --mauve:#855FB1 ;
+    --mauce_hover: #B18BDD;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    color:#FAFAFA;
+} 
+
+/* Galaxy Fold */
+@media (max-width: 280px){
+    .hero-section{
+        height: 90vh !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #hero-middle{
+        position: absolute;
+        margin-top: 150px !important;
+        text-align: center;
+        /* padding: 5px 0px; */
+        color:#28282D;
+    }
+    
+    #hero-head{
+        font-size: 25px !important;
+        line-height: 25px !important;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900 !important;
+        margin: auto 50px;
+    }
+    
+    #hero-body{
+        margin: 25px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 15px !important;
+        font-weight: 400;
+        line-height: 26px;;
+        padding: 0px 10px 0px 10px;
+    }
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+
+    #hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        margin-bottom: 100px !important;
+        /* background-color: #28282D; */
+        /* width: 100%; */
+    }
+
+    #meeting-imgs img{
+        width: 120px !important;
+        border-radius: 9px;
+    }
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 18px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-top: -30px;
+        margin-bottom:20px !important;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 25px !important;
+        line-height: 25px !important;
+        /* letter-spacing: 2px; */
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        margin: 15px 10px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 10px;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 370px !important;
+        height: 70vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 25px !important;
+        line-height: 30px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 15px !important;
+        line-height: 26px;
+        font-weight: 400;
+        width: 240px !important;
+        margin: 30px auto;
+    }
+
+}
+
+/* X-Small devices (portrait phones, less than 375px) */
+@media (max-width: 375px){
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .hero-section{
+        height: 115vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+    #hero-left,#hero-right{
+        /* background-color: #4D96A9;
+        margin-bottom: 500px;
+        height: 20px; */
+    }
+
+    #hero-left{
+        /* height: 70vh; */
+        /* background: url("assets/tablet/image-hero.png") top/cover no-repeat;  */
+    }
+
+    #hero-left img{
+        width: 110% !important;
+        margin-left: -20px;
+        /* background-color: #855FB1; */
+    }
+
+    #hero-right img{
+        width: 110% !important;
+        margin-left: 15px;
+        /* background-color: #4D96A9; */
+    }
+    
+    #hero-middle{
+        position: absolute;
+        margin-top: 190px;
+        text-align: center;
+        /* padding: 5px 20px; */
+        color:#28282D;
+    }
+    
+    #hero-head{
+        font-size: 38px;
+        line-height: 40px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin: auto 50px;
+    }
+    
+    #hero-body{
+        margin: 25px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        margin-bottom: 150px;
+        /* background-color: #28282D; */
+        /* width: 100%; */
+    }
+    #hero-button-left{
+        background-color: var(--ocean_blue);
+        /* width: 30%; */
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: var(--ocean_blue_hover);
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color:var(--mauve) ;
+        /* width: 20%; */
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: var(--mauce_hover);
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:69px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 20px 23px;
+        border: 1px solid gray;
+    }
+    
+    .meeting-section{
+        height: 60vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: row; */
+        row-gap: 18px;
+        justify-content:space-evenly;
+        margin: 140px 0px 70px 0px;
+    }
+
+    #meeting-imgs img{
+        width: 150px;
+        border-radius: 9px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 18px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 30px;
+        line-height: 30px;
+        /* letter-spacing: 2px; */
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        margin: 15px 10px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 15px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 150px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 19px 21px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+    }
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 205px;
+        height: 70vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 70vh;
+        background-color: var(--ocean_blue) ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 340px;
+        margin: 30px auto;
+    }
+    
+
+    #experience-right-button{
+        opacity: 1 !important;
+        /* background-color:var(--mauve) ; */
+        background-color: #6e479b;
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+}
+
+/* Samsung galaxy 8+ */
+@media (min-width: 360px){
+    .hero-section{ 
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+    #meeting-imgs img{
+        width: 160px;
+        border-radius: 9px;
+    }
+    .meeting-section{ 
+        height: 61vh;
+        text-align: center;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 400px !important;
+        height: 50vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 50vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        text-align: center;
+    }
+}
+
+/* Small devices (landscape phones, 375px and up) */
+@media (min-width: 375px){
+
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .hero-section{
+        height: 115vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #hero-left img{
+        width: 110% !important;
+        margin-left: -20px;
+    }
+
+    #hero-right img{
+        width: 110% !important;
+        margin-left: 15px;
+    }
+    
+    #hero-middle{
+        position: absolute;
+        margin-top: 190px;
+        text-align: center;
+        color:#28282D;
+    }
+    
+    #hero-head{
+        font-size: 40px;
+        line-height: 40px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin: auto 50px;
+    }
+    
+    #hero-body{
+        margin: 25px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        margin-bottom: 150px;
+        /* background-color: #28282D; */
+        /* width: 100%; */
+    }
+    #hero-button-left{
+        background-color: var(--ocean_blue);
+        /* width: 30%; */
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: var(--ocean_blue_hover) ;
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color: var(--mauve);
+        /* width: 20%; */
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: var(--mauce_hover) ;
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:69px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 20px 23px;
+        border: 1px solid gray;
+    }
+    
+    .meeting-section{
+        height: 60vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: row; */
+        row-gap: 18px;
+        justify-content:space-evenly;
+        margin: 140px 0px 70px 0px;
+    }
+
+    #meeting-imgs img{
+        width: 150px;
+        border-radius: 9px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 18px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 30px;
+        line-height: 30px;
+        /* letter-spacing: 2px; */
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        margin: 15px 10px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 15px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 150px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 19px 21px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+    }
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 205px;
+        height: 70vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 70vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 340px;
+        margin: 30px auto;
+    }
+    
+    #experience-right-button{
+        opacity: 1 !important;
+        /* background-color:var(--mauve) ; */
+        background-color: #6e479b;
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+}
+
+
+/* iphone 12 pro */
+@media (min-width: 390px){
+    .hero-section{ 
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+    #meeting-imgs img{
+        width: 165px;
+        border-radius: 9px;
+    }
+    .meeting-section{ 
+        height: 51vh;
+        text-align: center;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 400px !important;
+        height: 50vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 50vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        text-align: center;
+    }
+}
+
+/* Samsung Galaxy S20 ultra */
+@media (min-width: 412px){
+    .hero-section{ 
+        height: 78vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+    #meeting-imgs img{
+        width: 170px;
+        border-radius: 9px;
+    }
+    .meeting-section{ 
+        height: 48vh;
+        text-align: center;
+    }
+}
+
+
+/* Iphone XR */
+@media (min-width: 414px){
+    .hero-section{
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }  
+
+    #meeting-imgs{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: row; */
+        row-gap: 10px;
+        justify-content:space-evenly;
+        margin: 140px 0px 70px 0px;
+    }
+
+    #meeting-imgs img{
+        width: 180px;
+        border-radius: 9px;
+    }
+
+    .meeting-section{
+        height: 51vh;
+        text-align: center;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 400px !important;
+        height: 50vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 50vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        text-align: center;
+    }
+}
+
+/* Surface Pro Duo */
+@media (min-width: 540px){
+    .hero-section{
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #hero-middle{
+        position: absolute;
+        margin-top: 240px;
+        text-align: center;
+        padding: 5px 50px;
+        color:#28282D;
+    }
+
+    #meeting-imgs{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 25px;
+        justify-content: center;
+        margin: 300px 0px 70px 0px !important;
+    }
+
+    #meeting-imgs img{
+        width: 220px;
+        border-radius: 8px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 23px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        line-height: 26px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 2px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        margin: 25px 20px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 95px;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 660px !important;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .hero-section{
+        height: 115vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    #hero-middle{
+        position: absolute;
+        margin-top: 350px;
+        text-align: center;
+        padding: 5px 50px;
+        color:#28282D;
+    }
+    
+    #hero-head{
+        font-size: 54px;
+        line-height: 54px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        padding: auto 740px;
+    }
+    
+    #hero-body{
+        margin: 25px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        margin-bottom: 150px;
+    }
+    #hero-button-left{
+        background-color: var(--ocean_blue);
+        width: 25%;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: var(--ocean_blue_hover) ;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color: var(--mauve);
+        width: 20%;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: var(--mauce_hover);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:66px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 16px 20px;
+        border: 1px solid gray;
+    }
+    
+    .meeting-section{
+        height: 90vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: row; */
+        gap: 30px;
+        justify-content: center;
+        margin: 300px 0px 70px 0px !important;
+    }
+
+    #meeting-imgs img{
+        width: 200px;
+        border-radius: 25px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        line-height: 26px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 2px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        margin: 25px 70px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 95px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 150px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 20px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+    }
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 400px !important;
+        height: 60vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 60vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        text-align: center;
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 44px;
+        line-height: 44px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 450px;
+    }
+
+    #experience-right-button{
+        opacity: 1 !important;
+        /* background-color:var(--mauve) ; */
+        background-color: #6e479b;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    #header{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero-section{
+        height: 65vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #hero-left img{
+        width: 110% !important;
+        margin-left: -30px;
+        /* background-color: #855FB1; */
+    }
+
+    #hero-right img{
+        width: 110% !important;
+        margin-left: 30px;
+        /* background-color: #4D96A9; */
+    }
+    
+    #hero-middle{
+        position: absolute;
+        margin-top: 350px;
+        text-align: center;
+        padding: 5px 50px;
+        color:#28282D;
+    }
+    
+    #hero-head{
+        font-size: 54px;
+        line-height: 54px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        padding: auto 740px;
+    }
+    
+    #hero-body{
+        margin: 25px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 0px 150px 0px 150px;
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 15px;
+        margin-bottom: 150px;
+    }
+    #hero-button-left{
+        background-color: var(--ocean_blue);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: var(--ocean_blue_hover);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color: var(--mauve) ;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: var(--mauce_hover);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:66px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 16px 20px;
+        border: 1px solid gray;
+    }
+    
+    .meeting-section{
+        height: 50vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+        margin: 30px 0px 70px 0px;
+    }
+
+    #meeting-imgs img{
+        width: 170px;
+        border-radius: 8px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 16px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        line-height: 26px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 3px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;  
+        margin: auto 150px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 150px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 150px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 20px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+    }
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 180px !important;
+        height: 40vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 40vh;
+        background-color: var(--ocean_blue) ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 44px;
+        line-height: 44px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        /* margin-top: 50px; */
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 550px;
+        margin: -20px 0px;
+    }
+
+    #experience-right-button{
+        background-color: var(--mauve) ;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    #experience-right-button{
+        opacity: 1 !important;
+        /* background-color:var(--mauve) ; */
+        background-color: #6e479b;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+}
+
+/* iPad air */
+@media (min-width:820px){
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 80px !important;
+        height: 40vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+}
+
+/* Surface pro 7 */
+@media (min-width:912px){ 
+    .hero-section{
+        height: 47vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #hero-middle{
+        /* position: absolute; */
+        /* margin-top: 190px; */
+        /* text-align: center; */
+        color:#28282D;
+    }
+
+    #hero-left img{
+        width: 100% !important;
+        /* width: 120% !important; */
+        margin-left: 15px !important;
+    }
+
+    #hero-right img{
+        width: 100% !important;
+        /* width: 120% !important; */
+        margin-right: 15px;
+    }
+
+    #meeting-imgs img{
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    #hero-head{
+        margin: 0px 230px;
+        font-size: 50px !important;
+        line-height: 50px;
+        font-weight: 900;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 10px !important;
+        height: 40vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .hero-section{
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    
+    #hero-middle{
+        position: relative !important;
+        margin: auto !important;
+        text-align: center;
+        color:#28282D;
+        width: 500px;
+    }
+    
+    #hero-head{
+        font-size: 54px;
+        line-height: 54px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        padding: 0px 70px;
+        /* background-color: #4D96A9; */
+    }
+    
+    #hero-body{
+        margin: 30px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 0px 0px !important;
+        /* background-color: #855FB1; */
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 15px;
+        margin-bottom: 150px;
+    }
+    #hero-button-left{
+        background-color: var(--ocean_blue);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: var(--ocean_blue_hover);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color: #855FB1;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: #D9B8FF;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:66px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 16px 20px;
+        border: 1px solid gray;
+    }
+    
+    .meeting-section{
+        height: 90vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        justify-content: center;
+        margin: 30px 0px 70px 0px;
+    }
+
+    #meeting-imgs img{
+        width: 220px;
+        border-radius: 25px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 16px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        line-height: 26px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 3px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;  
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 230px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 150px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 20px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+    }
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 100px !important;
+        height: 50vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 50vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around !important;
+        padding: auto 50px !important;
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 35px;
+        line-height: 44px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        padding-left: 100px;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 300px;
+    }
+    #experience-right-button{
+        /* background-color: var(--mauve); */
+        background-color: #6e479b;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+        font-family: 'Red Hat Display', sans-serif;
+        margin-right: 100px !important;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+}
+
+
+/* Nest Hup */
+@media (min-width: 1024px){
+    .hero-section{ 
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100% !important;
+    }
+
+    #hero-middle{
+        position: relative !important;
+        margin-top: -25px !important;
+        text-align: center;
+        padding: 0px 0px !important;
+        color:#28282D;
+    }
+
+    #hero-head{
+        margin-top: 30px !important;
+        font-size: 54px;
+        line-height: 54px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        width: 65% !important;
+        margin-left: 30px !important;
+    }
+
+    #hero-body{
+        padding: 0px 30px !important;
+    }
+
+    #hero-left,#hero-right{
+        /* background-color: #28282D; */
+    }
+
+    #hero-left img{
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    #hero-right img{
+        width:100% !important;
+        margin-left: 0px !important;
+    }
+
+    #meeting-imgs img{
+        width: 200px;
+        border-radius: 8px;
+    }
+    
+    
+
+    #count-down{
+        margin-top:70px;
+    }
+
+    #one{
+        border-radius: 50%;
+        padding: 20px 23px;
+        border: 1px solid gray;
+    }
+
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 165px !important;
+        height: 50vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+
+    .experience-section{
+        height: 50vh;
+        background-color: var(--ocean_blue) ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        /* align-items: end; */
+        justify-content: space-between !important;
+        /* padding: auto 50px !important; */
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 35px;
+        line-height: 44px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        padding-left: 50px;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 300px;
+    }
+    #experience-right-button{
+        /* background-color: var(--mauve) ; */
+        background-color: #6e479b;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+        font-family: 'Red Hat Display', sans-serif;
+        margin-right: 50px !important;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    #hero-middle{
+        margin: auto;
+        text-align: center;
+        padding: 5px 20px !important;
+        color:#28282D;
+        width: 100% !important;
+    }
+
+    .hero-section{
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto !important;
+    }
+
+    #hero-left img, #hero-right img{
+        width: auto !important;
+        margin-left: auto !important;
+    }
+    
+    
+    #hero-head{
+        font-size: 54px;
+        line-height: 54px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #hero-body{
+        margin: 30px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 15px;
+        margin-bottom: 150px;
+    }
+    #hero-button-left{
+        background-color: var(--ocean_blue) ;
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: var(--ocean_blue_hover);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color: var(--mauve);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: var(--mauce_hover);
+        padding: 20px 30px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:70px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 20px 23px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        color: #87879D;
+    }
+    
+    .meeting-section{
+        height: 90vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: flex;
+        flex-direction: row;
+        column-gap: 35px;
+        justify-content: center;
+        margin: 30px 0px 70px 0px;
+    }
+    #meeting-imgs img{
+        width: 270px;
+        border-radius: 10px;
+    }
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 16px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        line-height: 26px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 4px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        /* margin: 15px 400px; */  
+        margin: auto 500px;
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 350px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 65px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 20px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        color: #87879D;
+    }
+    #footer-section{
+        position: relative;
+        opacity: 0.999 !important;
+        z-index: 1;
+        margin-top: -60px !important;
+        height: 50vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 50vh;
+        background-color: #4D96A9 ;
+        opacity: 0.909 !important;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px 100px;
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 40px;
+        line-height: 44px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 350px;
+    }
+    #experience-right-button{
+        opacity: 1 !important;
+        /* background-color:var(--mauve) ; */
+        background-color: #6e479b;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 1;
+        /* background-color: var(--mauce_hover) ; */
+        background-color: #a078ce;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white !important;
+        font-family: 'Red Hat Display', sans-serif;
+        cursor: pointer;
+    }
+
+    .btn-version{
+        color: #D9B8FF;
+    }
+}
+
